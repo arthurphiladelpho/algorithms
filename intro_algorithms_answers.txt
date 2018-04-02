@@ -1,0 +1,43 @@
+Primitive Algorithm One: Drink a beer bottle.
+1.  Walk up to fridge.
+2.  Open fridge door.
+3.  Grab a bottle.
+4.  Get a bottle opener.
+5.  Open the bottle.
+6.  Sit down.
+7.  Take a sip.
+8.  WHILE the bottle isn't empty
+	9.  Take a sip.
+10. ENDWHILE
+11. Throw the bottle in the trash can.
+
+Primitive Algorithm Two: Doing a Pull Up Set.
+1.  Find a pull up bar.
+2.  Jump up and grab the bar.
+3.  Tighten your shoulders and midsection.
+4.  Pull yourself up until your chin is above the bar. (This is the starting position.)
+5.  Lower yourself until your arms are stretched 99% (leave a little kink in the elbows for injury prevention).
+6.  Hold this position for half a second.
+7.  Pull yourself up until your chin is above the bar.
+8.  Hold for one second.
+9.  WHILE the set is incomplete.
+10. 	Repeat step 5 through 8
+11. ENDWHILE
+12. Lower yourself down gently.
+13. Release the bar.
+
+Primitive Algorithm Three: Drinking Coffee.
+1.  Grab a mug.
+2.  Get a nespresso capsule.
+3.  Turn on nespresso machine.
+4.  Wait until light stop blinking.
+5.  Open machine, place capsule in, close machine.
+6.  Place mug underneath the tap.
+7.  Press button.
+8.  Wait until all the coffee is served.
+9.  Wait for coffee to cool down.
+10. Have a sip.
+11. WHILE coffee mug isn't empty
+12. Have a sip.
+13. ENDWHILE
+14. Place mug in washing machine.
