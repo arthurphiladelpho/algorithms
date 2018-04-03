@@ -1,0 +1,22 @@
+1. Given the alphabetically sorted collection in this checkpoint, how many iterations would it take to find the value G using linear search?
+----> 7
+2. Given the alphabetically sorted collection in this checkpoint, how many iterations would it take to find the value G using binary search?
+----> 3
+3. Calculate fib(10), fib(11), fib(12) by hand.
+----> 55, 89, 144
+
+* Compare the time it takes to run fib(20) in recursive and iterative form.
+---> Iterative form performed better.
+Recursive:
+2.3.3 :001 > load './fibonnaci_recursive.rb'
+  0.000000   0.000000   0.000000 (  0.001542)
+Iterative:
+2.3.3 :001 > load './fibonacci_iterative.rb'
+  0.000000   0.000000   0.000000 (  0.000015)
+
+1. Given an unsorted collection of a million items, which algorithm would you choose between linear search and binary search? Would you use an iterative or recursive solution? Explain your reasoning.
+----> Linear search, since binary search only works with sorted lists.
+
+2. Given a sorted collection of a million items, which algorithm would you choose between linear search and binary search? Would you use an iterative or recursive solution? Explain your reasoning.
+----> Binary search, due to it's "divide-and-conquer" approach. On it's second iteration, it'd have eliminated half a million items and by the third over eight hundred items. This would be a way more effective way to find a value than using linear search, which would have eliminated only three items in the third iteration.
+
