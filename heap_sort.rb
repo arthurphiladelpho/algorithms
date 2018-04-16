@@ -1,54 +1,44 @@
-class HeapSort
-  attr_accessor :input
-
-  def initialize(arg=[1,124,51,54])
-    @input=arg
-  end
-
-  def heap_sort
-    heapify
-    the_end=input.length-1
-    while the_end > 0
-      p  input
-      input[the_end],input[0]=input[0],input[the_end]
-      the_end-=1
-      shift_down(0,the_end)
+def heap_sort(arr)
+# heapify
+    (1..arr.length - 1).each do |i|
+        child = i
+        while child > 0
+            parent = (child - 1) / 2
+            if arr[parent] < arr[child]
+                temp = arr[parent]
+                arr[parent] = arr[child]
+                arr[child] = temp
+                child = parent
+            else
+                break
+            end
+        end
     end
-    input
-  end
 
-  def heapify
-    the_start=(input.length-2)/2
-
-    while the_start >=0 
-      p  the_start
-      shift_down(the_start,input.length-1)
-      the_start-=1
+# sort
+    i = arr.length - 1
+    while i > 0
+        temp = arr[0]
+        arr[0] = arr[i]
+        arr[i] = temp
+        i -= 1
+        
+        parent = 0
+        while parent * 2 < i
+            child = parent * 2 + 1
+            if child < i && arr[child] < arr[child + 1]
+                child += 1
+            end
+            
+            if arr[parent] < arr[child]
+                temp = arr[child]
+                arr[child] = arr[parent]
+                arr[parent] = temp
+                parent = child
+            else
+                break
+            end
+        end
     end
-  end
-
-  def shift_down(the_start,the_end)
-    root=the_start
-    while root*2+1 <= the_end
-      child=root*2+1
-      swap=root
-
-      if input[swap] < input[child]
-        swap=child
-      end
-
-      if child+1 <= the_end && input[swap] < input[child+1]
-        swap=child+1
-      end
-
-      if swap!=root
-        input[root],input[swap]=input[swap],input[root]
-        root=swap
-      else
-        return
-      end
-
-    end
-  end
-
+    arr
 end

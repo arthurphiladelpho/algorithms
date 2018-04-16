@@ -1,34 +1,28 @@
-def partition(arr, first, last)
-
-	pivot = arr[last]
-	partition_index = first
-	i = first
-
-	while i < last
-		if arr[i] <= pivot
-			temp  = arr[i]
-			arr[i] = arr[partition_index]
-			arr[partition_index] = temp
-			partition_index += 1
-		end
-		i += 1
-	end
-
-	temp = arr[partition_index]
-	arr[partition_index] = pivot
-	arr[last] = temp
-	return partition_index
-
+def quick_sort(arr, first, last)
+  if first < last
+    split_index = partition(arr, first, last)
+    quick_sort(arr, first, split_index - 1)
+    quick_sort(arr, split_index + 1, last)
+  end
+  arr
 end
 
-def quick_sort(arr, first, last)
-	
-	if first < last
-		partition_index = partition(arr, first, last)
-		quick_sort(arr, first, partition_index - 1)
-		quick_sort(arr, partition_index + 1, last)
-	end
-
-	return arr
-
+def partition(arr, first, last)
+  pivot = arr[last]
+  split_index = first
+  
+  i = first
+  while i < last
+    if pivot && arr[i] <= pivot
+      temp = arr[i]
+      arr[i] = arr[split_index]
+      arr[split_index] = temp
+      split_index += 1
+    end
+    i += 1
+  end
+  temp = arr[split_index]
+  arr[split_index] = pivot
+  arr[last] = temp
+  split_index
 end

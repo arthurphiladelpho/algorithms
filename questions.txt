@@ -1,0 +1,6 @@
+  							user     system      total        real
+bucket sort  0.000000   0.000000   0.000000 (  0.000066)
+heap sort    0.000000   0.000000   0.000000 (  0.000182)
+quick sort   0.000000   0.000000   0.000000 (  0.000058)
+
+Some algorithms are faster than others simply because they perform less calculations. Another variable is how many times the algorithm goes over the items in the array. Algorithms that have to look at items more than once take longer than algorithms that will look at items once or less. An algorithm efficiency is magnified when there is more data to be sorted.
