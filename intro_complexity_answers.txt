@@ -1,0 +1,29 @@
+1. An algorithm that has a O(1) is a Ferrari, one that has a O(2ˆn) is a bycicle.
+
+2. In all cases, the item we're searching for should be at the exact middle of the collection.
+
+3. The worst case would be if the item we're searching for is located in the extremes of a collection (first or last index).
+
+4. The bounded case would be somewhere in between the best and worst case. ie: Positioned close to the edges but not at the edge.
+
+5. https://docs.google.com/spreadsheets/d/17KXxqK0nc-SQmoPpcP0pC_yOsCfDcePmY1A-_M8gLFc/edit?usp=sharing
+
+6. The limit is infinity.
+
+7. O(2^n)
+
+8. 
+# Since the we'll have to print all the items in the collection. Assuming they are the numbers 1-10.
+	def print_all(collection)
+    collection.each do |c|
+      puts c
+    end
+  end
+
+9. https://docs.google.com/spreadsheets/d/15RwDh-iZDViUqk6kb1jPUUftyC77lQyghXqo4bnAtKo/edit?usp=sharing
+
+10. O(log n)
+
+11. Ω(1)
+
+12. Ө(logn/2)
