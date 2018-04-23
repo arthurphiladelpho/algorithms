@@ -1,0 +1,6 @@
+1. O(1) - Constant time: program will always take the same amount of time to run.
+2. O(n) - Linear time: in the worst case scenario, the item we want will be in the last position of the array.Program running time will grow as the collection passed in grows.
+3. O(n) - Linear time: in the worst case, the item would be in the last position of the subarray, within the last position of the array. Program running time will grow as the collection passed in grows.
+4. O(n) - Linear time: fibonacci recursive, is the addition of the previous 2 numbers, program running time will grow as the collection passed in grows.
+5. O(n) - Linear time: fibonacci iterative. Program running time grows as collection grows, since it'll add the previous two numbers.
+6. O(n²) - Quadratic time: since we'd have to iterate over the collection twice before knowing the results.
